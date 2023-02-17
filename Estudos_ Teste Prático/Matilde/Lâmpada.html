@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>P5_Ex4</title>
+    <script type="text/JAVASCRIPT">
+     function welcome() {
+     alert("Para acender ou apagar a lente, carregue nos respetivos botões. Divirtase!");
+     }
+     function interruptor(x) {
+     var picture = document.getElementById("imagem");
+     if (x==1) {
+     picture.src="http://i.stack.imgur.com/ybxlO.jpg";
+     } else {
+     picture.src="http://ap.imagensbrasil.org/images/lampada-apagada.jpg";
+     }
+     }
+     window.onload=welcome();
+    </script>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 4 | Brincando com imagens...</h1>
+    <img src="http://ap.imagensbrasil.org/images/lampada-apagada.jpg" alt="lâmpada"
+         width="200"; id="imagem" />
+    <br />
+    <button onclick="interruptor(1)">Ligar</button>
+    <button onclick="interruptor(0)">Desligar</button>
+</body>
+</html>

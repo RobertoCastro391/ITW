@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <title> Totobola_Teste Prático</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="bannerTop">
+    </div>
+    <div class="container">
+        <form name="Totobola" method="get" action="">
+            <table style="border:1px solid;">
+                <tr text-align="center">
+                    <th style="border-bottom:1px solid; border-right:1px solid;" width="70%">Jogos&nbsp;&nbsp;</th>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%">1</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%">X</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%">2</td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%">Sporting - Arouca&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo1_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo1_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo1_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%">Estoril-Tondela&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo2_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo2_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo2_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%"> Moreirense-V. Setúbal&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo3_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo3_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo3_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%"> Feirense-Belenenses&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo4_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo4_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo4_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%"> Rio Ave-Boavista&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo5_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo5_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo5_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%"> Marítimo-Braga&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo6_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo6_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo6_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%">P. Ferreira-Chaves&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo7_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo7_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo7_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%">Gil Vicente-Portimon.&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo8_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo8_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo8_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%">Freamu.-Leixões&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo9_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo9_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo9_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%">Famalicão-Fafe&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo10_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo10_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo10_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%"> Arsenal-Tottenham&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo11_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo11_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo11_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%">Celta-Valência&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo12_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo12_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo12_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="70%">Fiorentina-Sampdória&nbsp;&nbsp;</td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo13_1" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo13_X" type="checkbox" onclick="boxClicked()" /></td>
+                    <td style="border-bottom:1px solid;border-right:1px solid;" width="10%"><input name="Game_Results" id="Jogo13_2" type="checkbox" onclick="boxClicked()" /></td>
+                </tr>
+            </table>
+
+            <br />
+
+            <div class="row">
+                <table border="1">
+                    <tr><th colspan="30"> Múltiplas&nbsp; </th></tr>
+                    <td><input name="Multiple" id="Multiple_2" type="radio" /> 2 </td>
+                    <td><input name="Multiple" id="Multiple_3" type="radio" /> 3 </td>
+                    <td><input name="Multiple" id="Multiple_4" type="radio" /> 4 </td>
+                    <td><input name="Multiple" id="Multiple_6" type="radio" /> 6 </td>
+                    <td><input name="Multiple" id="Multiple_8" type="radio" /> 8 </td>
+                    <td><input name="Multiple" id="Multiple_9" type="radio" /> 9 </td>
+                    <td><input name="Multiple" id="Multiple_12" type="radio" /> 12 </td>
+                    <td><input name="Multiple" id="Multiple_16" type="radio" /> 16 </td>
+                    <td><input name="Multiple" id="Multiple_18" type="radio" /> 18 </td>
+                    <td><input name="Multiple" id="Multiple_24" type="radio" /> 24 </td>
+                    <td><input name="Multiple" id="Multiple_27" type="radio" /> 27 </td>
+                    <td><input name="Multiple" id="Multiple_32" type="radio" /> 32 </td>
+                    <td><input name="Multiple" id="Multiple_36" type="radio" /> 36 </td>
+                    <td><input name="Multiple" id="Multiple_48" type="radio" /> 48 </td>
+                    <td><input name="Multiple" id="Multiple_54" type="radio" /> 54 </td>
+                    <td><input name="Multiple" id="Multiple_64" type="radio" /> 64 </td>
+                    <td><input name="Multiple" id="Multiple_72" type="radio" /> 72 </td>
+                    <td><input name="Multiple" id="Multiple_81" type="radio" /> 81 </td>
+                    <td><input name="Multiple" id="Multiple_96" type="radio" /> 96 </td>
+                    <td><input name="Multiple" id="Multiple_108" type="radio" /> 108 </td>
+                    <td><input name="Multiple" id="Multiple_128" type="radio" /> 128 </td>
+                    <td><input name="Multiple" id="Multiple_144" type="radio" /> 144 </td>
+                    <td><input name="Multiple" id="Multiple_162" type="radio" /> 162 </td>
+                    <td><input name="Multiple" id="Multiple_192" type="radio" /> 192 </td>
+                    <td><input name="Multiple" id="Multiple_216" type="radio" /> 216 </td>
+                    <td><input name="Multiple" id="Multiple_243" type="radio" /> 243 </td>
+                    <td><input name="Multiple" id="Multiple_256" type="radio" /> 256 </td>
+                    <td><input name="Multiple" id="Multiple_288" type="radio" /> 288 </td>
+                    <td><input name="Multiple" id="Multiple_324" type="radio" /> 324 </td>
+                    <td><input name="Multiple" id="Multiple_384" type="radio" /> 384 </td>
+                </table>
+            </div>
+            <div class="row">
+                <hr />
+                <div class="col-md-3">1's: <span id="Status1"></span></div>
+                <p></p>
+                <div class="col-md-3">X's: <span id="StatusX"></span></div>
+                <p></p>
+                <div class="col-md-3">2's: <span id="Status2"></span></div>
+                <p></p>
+                <div class="col-md-3"><input type="submit" class="" id="botao" value="Jogar" disabled="disabled" /></div>
+                <p></p>
+            </div>
+        </form>
+        <script src="Totobola.js"></script>
+    </div>
+
+   
+</body>
+</html>

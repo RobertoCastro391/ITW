@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>P5 Ex5 | Jogo das cartas</title>
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .quadrado {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+        }
+    </style>
+    <script>
+        function baralhar() {
+            var a = document.getElementById("verde");
+            var b = document.getElementById("amarelo");
+            var c = document.getElementById("vermelho");
+            var d = document.getElementById("azul");
+            if (window.innerHeight < 500 || window.innerWidth < 205) {
+                baralhar();
+            }
+            a.style.bottom = (Math.random() * (window.innerHeight - 200)) + "px";
+            a.style.right = (Math.random() * (window.innerWidth - 120)) + "px";
+
+            b.style.bottom = (Math.random() * (window.innerHeight - 200)) + "px";
+            b.style.right = (Math.random() * (window.innerWidth - 120)) + "px";
+            c.style.bottom = (Math.random() * (window.innerHeight - 200)) + "px";
+            c.style.right = (Math.random() * (window.innerWidth - 120)) + "px";
+            d.style.bottom = (Math.random() * (window.innerHeight - 200)) + "px";
+            d.style.right = (Math.random() * (window.innerWidth - 120)) + "px";
+        }
+        function info(square) {
+            var name = square.id;
+            var bottom = square.style.bottom;
+            var right = square.style.right;
+            document.getElementById("nome").innerHTML = "O meu nome é " + name;
+            document.getElementById("baixo").innerHTML = "Disto de baixo " + bottom;
+            document.getElementById("direita").innerHTML = "Disto da direita " + right;
+        }
+        function pedido() {
+            document.getElementById("nome").innerHTML = "Passe o rato sobre um quadrado para saber a sua posição";
+            document.getElementById("baixo").innerHTML = "";
+            document.getElementById("direita").innerHTML = "";
+        }
+    </script>
+</head>
+    <body>
+        <div class="content">
+            <div class="top">
+                <h1>Jogo dos quadrados</h1>
+                <hr>
+            </div>
+            <div class="top">
+                <button type="button" class="btn btn-primary"
+                        onclick="baralhar()">
+                    Baralhar
+                </button><br />
+                <span id="nome">Passe o rato sobre um quadrado para saber a sua posição</span><br>
+                <span id="baixo"></span><br>
+                <span id="direita"></span><br>
+            </div>
+            <div class="tabuleiro">
+                <div onmouseover="info(this)" onmouseout="pedido()" class="quadrado" id="verde"
+                     style="background-color: green"></div>
+                <div onmouseover="info(this)" onmouseout="pedido()" class="quadrado" id="amarelo"
+                     style="background-color: yellow"></div>
+                <div onmouseover="info(this)" onmouseout="pedido()" class="quadrado" id="vermelho"
+                     style="background-color: red"></div>
+                <div onmouseover="info(this)" onmouseout="pedido()" class="quadrado" id="azul"
+                     style="background-color: blue"></div>
+            </div>
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="formulario.css" />
+</head>
+<body>
+    <div class="bannerTop" style="height:280px">
+		<div class="jumbotron" style="background-image:url(banner.jpg); background-repeat:no-repeat;
+    background-size:cover; height:280px;" ></div>
+    </div>
+    <div class="container">
+		<form name="FormValues" action="http://192.168.160.36/FormEcho.aspx" method="post">
+            <h1 class="page-header"><i class="fa fa-info"></i> Cálculo da média do 1º ano da LEI</h1>
+            <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-xs-12 col-xs-offset-0">
+                    <br />
+                    <label for="nome" style="font-size:20px">Nome:   </label>
+                    <input type="text" name="nome" value="" id="nome" style="line-height:22px; margin-left:5px ; border-radius:4px; width:90%"/> <br />       
+           </div>
+            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0  col-xs-6 col-xs-offset-0">
+                <br />
+                <label for="nr" style="font-size:20px">Nº Mec:   </label>
+                <input type="text" name="numMec" value="" id="nr" style="line-height:22px; margin-left:5px ; border-radius:4px; width:70%" /> <br />
+            </div>
+            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0  col-xs-6 col-xs-offset-0" style="margin-bottom:25px">
+                <br />
+                <label for="nr" style="font-size:20px">Data de Nascimento:   </label>
+                <input type="text" name="dataNascimento" value="" id="data" placeholder="yyyy/mm/dd" style="line-height:22px; margin-left:5px ; border-radius:4px; width:48%" /> <br />
+            </div>
+            <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-xs-12 col-xs-offset-0" style="margin-top:25px;margin-bottom:0px; background-color:#90EE90; font-size:30px; font-weight:bold; line-height:60px; text-align:left;">
+             Plano Curricular</div>
+            
+            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-xs-6 col-xs-offset-0" style="margin-bottom:25px; background-color:#ADD8E6; font-size:16px; font-weight:bold; line-height:26px; text-align:center;">
+                1º Semestre
+            </div>
+            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-xs-6 col-xs-offset-0" style="margin-bottom:25px; background-color:#ADD8E6; font-size:16px; font-weight:bold; line-height:26px; text-align:center;">
+                2º Semestre
+            </div>
+            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-xs-6 col-xs-offset-0">
+                <span style="text-align:left;font-size:18px;font-weight:bold">Unidade Curricular</span>
+                <span style="position:relative; float:right; margin-left:20px ;font-size:18px;font-weight:bold">Nota</span>
+                <span style="position:relative; float:right; font-size:18px;font-weight:bold">Créditos</span> <br /><br />
+                <span style="text-align:left;font-size:16px;">Fundamentos de Programação</span>
+                <span style="position:relative; float:right"><input type="text" name="FP_N" id="FP_N" value=""  style="line-height:14px; margin-left:20px ; border-radius:4px; width:35px;" /></span>
+                <span style="position:relative; float:right"><input type="text" name="FP_C" value="" id="FP_C" style="line-height:14px; margin-left:5px ; border-radius:4px; width:35px;" /></span> <br />
+                <br />
+                <span style="text-align:left;font-size:16px;">Introdução às Tecnologias WEB</span>
+                <span style="position:relative; float:right"><input type="text" name="ITW_N" id="ITW_N"value=""  style="line-height:14px; margin-left:20px ; border-radius:4px; width:35px;" /></span>
+                <span style="position:relative; float:right"><input type="text" name="ITW_C" id="ITW_C" value="" style="line-height:14px; margin-left:5px ; border-radius:4px; width:35px;" /></span> <br />
+                <br />
+                <span style="text-align:left;font-size:16px;">Elementos de Física</span>
+                <span style="position:relative; float:right"><input type="text" name="FIS_N" id="FIS_N" value=""  style="line-height:14px; margin-left:20px ; border-radius:4px; width:35px;" /></span>
+                <span style="position:relative; float:right"><input type="text" name="FIS_C" id="FIS_C" value=""  id="fp" style="line-height:14px; margin-left:5px ; border-radius:4px; width:35px;" /></span> <br />
+                <br />
+                <span style="text-align:left;font-size:16px;">Álgebra Linear e Geometria Descritiva</span>
+                <span style="position:relative; float:right"><input type="text" name="ALGA_N" id="ALGA_N" value=""  style="line-height:14px; margin-left:20px ; border-radius:4px; width:35px;" /></span>
+                <span style="position:relative; float:right"><input type="text" name="ALGA_C" id="ALGA_C" value="" style="line-height:14px; margin-left:5px ; border-radius:4px; width:35px;" /></span> <br />
+                <br />
+                <span style="text-align:left;font-size:16px;">Cálculo I</span>
+                <span style="position:relative; float:right"><input type="text" name="CALC1_N" id="CALC1_N" value=""  style="line-height:14px; margin-left:20px ; border-radius:4px; width:35px;" /></span>
+                <span style="position:relative; float:right"><input type="text" name="CALC1_C" id="CALC1_C" value="" style="line-height:14px; margin-left:5px ; border-radius:4px; width:35px;" /></span> <br />
+                <br />
+                <br />
+               <span style="text-align:left;text-align:left;font-size:22px;font-weight:bold; color:#191970">1º Semestre(Créditos | Média)</span>
+               <span style="position:relative; float:right"><input type="text" name="M1S_N" id="M1S_N" readonly="readonly" value="" style="background-color:#C0C0C0; line-height:22px; margin-left:20px ; border-radius:4px; width:35px;" /></span>
+               <span style="position:relative; float:right"><input type="text" name="M1S_C" id="M1S_C" readonly="readonly" value="" style="background-color:#C0C0C0; line-height:22px; margin-left:5px ; border-radius:4px; width:35px;" /></span>
+            </div>
+            
+             <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-xs-6 col-xs-offset-0">
+                <span style="text-align:left;font-size:18px;font-weight:bold">Unidade Curricular</span>
+                <span style="position:relative; float:right; margin-left:20px ;font-size:18px;font-weight:bold">Nota</span>
+                <span style="position:relative; float:right; font-size:18px;font-weight:bold">Créditos</span> <br /><br />
+                <span style="text-align:left;font-size:16px;">Modelação e Análise de Sistemas</span>
+                <span style="position:relative; float:right"><input type="text" name="MAS_N" id="MAS_N"value=""  style="line-height:14px; margin-left:20px ; border-radius:4px; width:35px;" /></span>
+                <span style="position:relative; float:right"><input type="text" name="MAS_C" value="" id="MAS_C" style="line-height:14px; margin-left:5px ; border-radius:4px; width:35px;" /></span> <br />
+                <br />
+                <span style="text-align:left;font-size:16px;">Cálculo II</span>
+                <span style="position:relative; float:right"><input type="text" name="CALC2_N" id="CALC2_N"value=""  style="line-height:14px; margin-left:20px ; border-radius:4px; width:35px;" /></span>
+                <span style="position:relative; float:right"><input type="text" name="CALC2_C" id="CALC2_C" value="" style="line-height:14px; margin-left:5px ; border-radius:4px; width:35px;" /></span> <br />
+                <br />
+                <span style="text-align:left;font-size:16px;">Matemática Discreta</span>
+                <span style="position:relative; float:right"><input type="text" name="MD_N" id="MD_N"value=""  style="line-height:14px; margin-left:20px ; border-radius:4px; width:35px;" /></span>
+                <span style="position:relative; float:right"><input type="text" name="MD_C" id="MD_C" value=""  id="fp" style="line-height:14px; margin-left:5px ; border-radius:4px; width:35px;" /></span> <br />
+                <br />
+                <span style="text-align:left;font-size:16px;">Introdução à Arquitectura de Computadores </span>
+                <span style="position:relative; float:right"><input type="text" name="IAC_N" id="IAC_N"value=""  style="line-height:14px; margin-left:20px ; border-radius:4px; width:35px;" /></span>
+                <span style="position:relative; float:right"><input type="text" name="IAC_C" id="IAC_C" value="" style="line-height:14px; margin-left:5px ; border-radius:4px; width:35px;" /></span> <br />
+                <br />
+                <span style="text-align:left;font-size:16px;">Programação Orientada a Objetos</span>
+                <span style="position:relative; float:right"><input type="text" name="POO_N" id="POO_N"value=""  style="line-height:14px; margin-left:20px ; border-radius:4px; width:35px;" /></span>
+                <span style="position:relative; float:right"><input type="text" name="POO_C" id="POO_C" value="" style="line-height:14px; margin-left:5px ; border-radius:4px; width:35px;" /></span> <br />
+                <br />
+                <br />
+               <span style="text-align:left;text-align:left;font-size:22px;font-weight:bold; color:#191970">2º Semestre(Créditos | Média)</span>
+               <span style="position:relative; float:right"><input type="text" name="M2S_N" id="M2S_N" readonly="readonly" value="" style="background-color:#C0C0C0; line-height:22px; margin-left:20px ; border-radius:4px; width:35px;" /></span>
+               <span style="position:relative; float:right"><input type="text" name="M2S_C" id="M2S_C" readonly="readonly" value="" style="background-color:#C0C0C0; line-height:22px; margin-left:5px ; border-radius:4px; width:35px;" /></span> <br />
+            </div>
+            <center>
+				<button class="btn btn-primary" style="margin-top:20px;" onclick="calcula()">Calcular</button>
+			</center>
+        </form>    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="formulario.js"></script>
+</body>
+</html>

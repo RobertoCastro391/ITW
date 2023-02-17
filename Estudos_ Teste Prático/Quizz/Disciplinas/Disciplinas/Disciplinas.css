@@ -1,0 +1,19 @@
+﻿.banner {
+    height: 320px;
+    margin: auto;
+    margin-bottom: 1em!important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/07/21/10/untitled-design-82.png);
+}
+
+body {
+    margin-top: 0em!important;
+    margin-bottom: 1em
+}
+
+.hide {
+    display: none;
+}
+

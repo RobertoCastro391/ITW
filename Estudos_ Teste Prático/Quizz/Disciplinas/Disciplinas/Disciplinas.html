@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Teste1 2019/2020</title>
+    <!--  
+        Documentação BootStrap: https://getbootstrap.com/docs/4.3/components
+        Documentação FontAwesome: https://fontawesome.com/v4.7.0/icons/
+        -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="teste1.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="banner"></div>
+    <div class="container">
+        <form action="http://192.168.160.36/FormEcho.aspx" method="POST">
+            <input type="hidden" id="relatorio" name="relatorio" value="UserForm" />   <!--value errado-->
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-2"><label for="field_1" class="col-form-label text-right">Nome</label></div>
+                    <div class="col-md-10"><input class="form-control" type="text" id="field_1" name="field_1" /></div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="hide col-md-10 text-danger col-form-label" id="field_1_Error"><i class="fa fa-exclamation-triangle"></i> Erro: Tamanho mínimo do nome: 3 letras</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-2"><label for="field_2" class="col-form-label text-right">Sobrenome</label></div>
+                    <div class="col-md-10"><input class="form-control" type="text" id="field_2" name="field_2" /></div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="hide col-md-10 text-danger col-form-label" id="field_2_Error"><i class="fa fa-exclamation-triangle"></i> Erro: Tamanho mínimo do sobrenome: 3 letras</div>
+                </div>
+            </div>
+            <div class="form-check">
+                <div class="row">
+                    <div class="col-md-2"><label for="field_3" class="col-form-label text-right">Sexo</label></div>
+                    <div class="col-md-10">
+                        <input class="col-md-1" type="radio" id="field_31" name="field_3" value="Masculino" /> <label for="field_31" class="col-md-9">Masculino</label><br>
+                        <input class="col-md-1" type="radio" id="field_32" name="field_3" value="Feminino" /> <label for="field_32" class="col-md-9">Feminino</label>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="hide col-md-10 text-danger col-form-label" id="field_3_Error"><i class="fa fa-exclamation-triangle"></i> Erro: Tem de escolher um dos valores.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-2"><label for="field_4" class="col-form-label text-right">Data de nascimento</label></div>
+                    <div class="col-md-3"><input class="form-control" type="date" id="field_4" name="field_4" /></div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="hide col-md-10 text-danger col-form-label" id="field_4_Error"><i class="fa fa-exclamation-triangle"></i> Erro: Tem de inserir uma data.</div>
+                </div>
+            </div>
+            <div class="form-check">
+                <div class="row">
+                    <div class="col-md-2"><label for="field_5" class="col-form-label text-right">Disciplinas</label></div>
+                    <div class="col-md-10">
+                        <input class="col-md-1" type="checkbox" id="field_51" name="field_5" value="ALGA" /> <label for="field_51" class="col-md-9">Álgebra Linear e Geometria Analítica</label><br>
+                        <input class="col-md-1" type="checkbox" id="field_52" name="field_5" value="EF" /> <label for="field_52" class="col-md-9">Elementos de Física</label><br>
+                        <input class="col-md-1" type="checkbox" id="field_53" name="field_5" value="C1" /> <label for="field_53" class="col-md-9">Cálculo I</label><br>
+                        <input class="col-md-1" type="checkbox" id="field_54" name="field_5" value="ITW" /> <label for="field_54" class="col-md-9">Introdução às Tecnologias Web</label><br>
+                        <input class="col-md-1" type="checkbox" id="field_55" name="field_5" value="FP" /> <label for="field_55" class="col-md-9">Fundamentos de Programação</label><br>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="hide col-md-10 text-danger col-form-label" id="field_5_Error"><i class="fa fa-exclamation-triangle"></i> Erro: Tem de escolher pelo menos duas das opções.</div>
+                </div>
+            </div>
+            <hr />
+            <div class="row justify-content-md-center">
+                <div class="btn-group">
+                    <input type="submit" value="Validar e enviar" class="btn btn-outline-success" onclick="return validaFormulario()" />
+                    <input type="reset" value="Limpar Erros" class="btn btn-outline-danger" onclick="limpaErros()" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="teste1.js"></script>
+</body>
+</html>

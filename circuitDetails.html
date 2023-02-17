@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITW 2021/22 - Fórmula 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="myCSS.css" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-7.png" width="70" height="32" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Início</a></li>
+                    <li class="nav-item"><a href="drivers.html" class="nav-link px-2 text-white">Pilotos</a></li>
+                    <li class="nav-item"><a href="constructors.html" class="nav-link px-2 text-white">Marcas</a></li>
+                    <li class="nav-item"><a href="circuits.html" class="nav-link px-2 text-secondary">Circuitos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Copiado-->
+    <!-- Work Area-->
+    <div class="container">
+        <div class="py-2 mb-3">
+            <h2 data-bind="text:Name() +' ['+CircuitId()+']'"></h2>
+        </div>
+        <!-- ko if:Name().length > 0 -->
+        <table class="table table-sm small">
+            <tr class="row">
+                <th class="col-md-2">Id</th>
+                <td class="col-md-10" data-bind="text: CircuitId"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Nome</th>
+                <td class="col-md-10" data-bind="text: Name"></td>
+            </tr>
+            <tr class="row" data-bind="visible: ImageUrl() != '' && ImageUrl() != null">
+                <th class="col-md-2">Imagem</th>
+                <td class="col-md-10"><img class="img-thumbnail col-2" data-bind="attr:{src: ImageUrl}"><br />[<span data-bind="text: ImageUrl"></span>]</td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">País</th>
+                <td class="col-md-10" data-bind="text: Country"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Url</th>
+                <td class="col-md-10"><a class="text-muted text-decoration-none" data-bind="attr: {href: Url, target:'blank'}"><i class="fa fa-external-link"></i> [<span class="" data-bind="text: Url"></span>]</a></td>
+            </tr>
+
+        </table>
+        <!-- /ko -->
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <img src="https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-7.png" height="30" /> Loading data...
+                    </h5>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fa fa-spin fa-3x fa-refresh"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Work Area -->
+    <!-- End of Copiado -->
+    <div class="container">
+        <div class="row">
+            <i class="d-grid d-sm-flex justify-content-sm-end"><a href="circuits.html" class="btn btn-secondary col-lg-1 col-md-2 col-sm-12" align="center" tabindex="-1" role="button" aria-disabled="true">Voltar</a></i>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark text-white fixed-bottom">
+        <div class="container small">
+            <div class="navbar-text small">&copy;  Introdução as Tecnologias Web - 2021/22</div>
+            <div class="navbar-text small d-none d-md-none d-lg-block"> Feito com <i class="fa fa-heart-o text-danger"></i> por <a href="mailto:robertorcastro@ua.pt" class="text-decoration-none text-muted">Roberto</a> e <a href="mailto:tiagocgomes@ua.pt" class="text-decoration-none text-muted">Tiago</a>.</div>
+            <div class="navbar-nav small d-none d-md-block">
+                <div class="nav-item text-end"><a href="https://www.ua.pt" class="nav-link">Universidade de Aveiro</a></div>
+            </div>
+        </div>
+    </nav>
+    <script src="../../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="../../Scripts/knockout-3.5.1.js"></script>
+    <script src="../../Scripts/jquery-3.6.0.min.js"></script>
+    <script src="circuitDetails.js"></script>
+</body>
+</html>

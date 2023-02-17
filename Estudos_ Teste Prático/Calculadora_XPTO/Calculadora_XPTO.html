@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <title>A minha primeira calculadora XPTO</title>
+
+    <style>
+        * {               /* Aplica-se a todos os elementos*/
+            padding: 0;
+            margin: 0;
+        }
+        .fundo {
+            background-color:thistle;
+            height: 100%;
+            color: white;
+            font-family:'Arial Nova';
+        }
+
+        .calculadora {
+            position: absolute;
+            background-color: plum;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 15px;
+            border-radius: 23px
+        }
+
+        .button {
+            height: 50px;
+            width: 90px;
+            text-align: center;
+            color: white;
+            background-color:plum;
+            border-color: black;
+            border-radius:23px;
+        }
+
+        .button:hover {
+            background-color:thistle;
+        }
+        #resultado {
+            background-color: white;
+            width: 293px;
+            height: 30px;
+            border-radius: 23px;
+            color:black;
+        }
+        #btnigual {
+            height: 55px;
+            width: 293px;
+            text-align: center;
+            color: white;
+            background-color: plum;
+            border-color: black;
+            border-radius: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fundo">
+        <center><h1>ITW_2021</h1></center>
+    </div> 
+    <div class="calculadora">
+        <center><h3>Calculadora XPTO</h3></center>
+
+        <p id="resultado"></p>
+
+        <table height="400px" width="300px">
+            <tr>
+                <th ><button class="button" value="C" onclick="clearResult()">C</button></th>
+                <th ><button class="button">CE</button></th>
+                <td ><button class="button" value="%" onclick="addOperation()">%</button></td>
+            </tr>                                                                     
+            <tr>                                                                      
+                <td ><button class="button" value="/" onclick="addOperation()">/</button></td>
+                <th ><button class="button" value="*" onclick="addOperation()">*</button></th>
+                <td ><button class="button" value="-" onclick="addOperation()">-</button></td>
+            </tr>                                                                     
+            <tr>                                                                      
+                <td ><button class="button" value="7" onclick="addNumber()">7</button></td>
+                <th ><button class="button" value="8" onclick="addNumber()">8</button></th>
+                <td ><button class="button" value="9" onclick="addNumber()">9</button></td>
+            </tr>                                                                     
+            <tr>                                                                      
+                <td ><button class="button" value="4" onclick="addNumber()">4</button></td>
+                <th ><button class="button" value="5" onclick="addNumber()">5</button></th>
+                <td ><button class="button" value="6" onclick="addNumber()">6</button></td>
+            </tr>                                                                     
+            <tr>                                                                      
+                <td ><button class="button" value="1" onclick="addNumber()">1</button></td>
+                <th ><button class="button" value="2" onclick="addNumber()">2</button></th>
+                <td ><button class="button" value="3" onclick="addNumber()">3</button></td>
+            </tr>                                                                     
+            <tr>                                                                      
+                <td ><button class="button" value="0" onclick="addNumber()">0</button></td>
+                <th ><button class="button" value="." onclick="addNumber()">.</button></th>
+                <td ><button class="button" value="+" onclick="addOperation()">+</button></td>
+            </tr>
+            <tr>
+                <th colspan="3"><button id="btnigual" onclick="calculate()">=</button></th>
+            </tr>
+        </table>
+    </div>
+    <center> Feito com muito &#128150; por Mariana Perna.</center>    
+    <script src="Calculadora_XPTO.js"></script>
+
+</body>
+</html>
